@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pengamatan Penglihatan – Tahun 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg" id="bg"></div>
+
+<main id="app">
+  <!-- MENU -->
+  <section id="menu" class="screen show">
+    <h1>🔍 Pengamatan Penglihatan</h1>
+    <details class="info" open>
+      <summary>📖 Maklumat Pembelajaran</summary>
+      <p><b>Mata Pelajaran:</b> Pengurusan Kehidupan – Kemahiran Manipulatif Tahun 1</p>
+      <p><b>Tajuk:</b> 3.0 Pengamatan › 3.2 Pengamatan Penglihatan</p>
+      <p><b>Standard Kandungan (murid dibimbing untuk…):</b></p>
+      <ul><li>3.2.1 Diskriminasi yang sama</li><li>3.2.2 Diskriminasi yang ganjil</li></ul>
+      <p><b>Objektif (murid boleh…):</b></p>
+      <ol><li>Memilih objek/warna yang sama.</li><li>Memilih objek/warna yang sama dan ganjil.</li></ol>
+    </details>
+
+    <h2>Pilih Aras</h2>
+    <div class="levels">
+      <button class="btn lv on" data-l="1">⭐ Aras 1 <small>Mudah</small></button>
+      <button class="btn lv" data-l="2">⭐⭐ Aras 2 <small>Sederhana</small></button>
+      <button class="btn lv" data-l="3">⭐⭐⭐ Aras 3 <small>Mencabar</small></button>
+    </div>
+
+    <h2>Pilih Aktiviti</h2>
+    <div class="cards">
+      <button class="card" data-a="mengecam" style="--c:#ff6f91"><b>🔍</b>Mengecam<small>Pilih yang sama / ganjil</small></button>
+      <button class="card" data-a="padanan" style="--c:#4d96ff"><b>🧩</b>Padankan<small>Seret &amp; lepas</small></button>
+      <button class="card" data-a="jigsaw" style="--c:#2ebd6b"><b>🖼️</b>Jigsaw<small>Cantumkan gambar</small></button>
+      <button class="card" data-a="susun" style="--c:#ff9a3c"><b>🔢</b>Susun<small>Ikut susunan contoh</small></button>
+      <button class="card" data-a="kategori" style="--c:#a15cff"><b>🧺</b>Kategori<small>Asingkan ke bakul</small></button>
+    </div>
+  </section>
+
+  <!-- PERMAINAN -->
+  <section id="game" class="screen">
+    <header class="bar">
+      <button id="back" class="btn small">🏠 Menu</button>
+      <h2 id="gt"></h2>
+      <button id="snd" class="btn small alt">🔊</button>
+    </header>
+    <div class="prog"><i id="pb"></i></div>
+    <p id="ins" class="ins"></p>
+    <div id="board"></div>
+  </section>
+</main>
+
+<!-- KEJAYAAN -->
+<div id="ov">
+  <canvas id="fx"></canvas>
+  <div class="win">
+    <div class="trophy">🏆</div>
+    <h2>Tahniah! Hebat!</h2>
+    <div class="stars">⭐⭐⭐</div>
+    <div class="btns">
+      <button id="again" class="btn">🔄 Main Semula</button>
+      <button id="menuBtn" class="btn alt">🏠 Menu</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
